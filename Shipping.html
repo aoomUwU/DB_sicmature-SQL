@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>FURRY PET FRIENDS</title>
+    <link rel="stylesheet" href="Css/Shipping.css" />
+  </head>
+  <body>  
+      <div class="shopping-cart">
+      <h1>รายการสินค้า</h1>
+      <ul id="product-list">
+          <li>
+              <span>สินค้าที่ 1</span>
+              <img src="Img/logo2.png" width="100" height="100" alt=""></i>FURRY PET FRIENDS
+              <button onclick="addToCart('Product 1')">เพิ่มเข้าในตะกร้า</button>  
+              
+          </li>
+          <li>
+              <span>สินค้าที่ 2</span>
+              <img src="Img/logo2.png" width="100" height="100" alt=""></i>FURRY PET FRIENDS
+              <button onclick="addToCart('Product 2')">เพิ่มเข้าในตะกร้า</button>
+          </li>
+      </ul>
+    
+      <h2>ตะกร้าสินค้า</h2>
+      <ul id="cart-list">
+      </ul>
+      <button id="checkout-button" onclick="checkout()">ชำระเงิน</button>
+    </div>
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="Img/logo2.png" alt=""></i>FURRY PET FRIENDS
+      </div>
+      
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bxs-moon' id="darkLight"></i>
+        <i class='bx bx-cart-add' ></i>
+        <i class='bx bxs-chat'></i>
+        <i class="bx bxs-bell-ring"></i> 
+        <i class="bx bxs-heart"></i> 
+        <div class="profile-dropdown">
+            <img src="Img/logo2.png" alt="Your Profile Picture" class="profile-image">
+            <ul class="dropdown-menu">
+              <li><a href="#">ตั้งค่าโปรไฟล์</a></li>
+              <li><i   class='bx bx-log-out bx-tada bx-rotate-90' ></i></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_PETS"></div>
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bxs-dog"></i>
+              </span>
+              <span class="navlink">สุนัข</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">อาหาร</a>
+              <a href="#" class="nav_link sublink">ของเล่น</a>
+              <a href="#" class="nav_link sublink">อุปกรณ์</a>
+              <a href="#" class="nav_link sublink">ดูทั้งหมด</a>
+            </ul>
+          </li>
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bxs-cat"></i>
+              </span>
+              <span class="navlink">แมว</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">อาหาร</a>
+              <a href="#" class="nav_link sublink">ของเล่น</a>
+              <a href="#" class="nav_link sublink">อุปกรณ์</a>
+              <a href="#" class="nav_link sublink">ดูทั้งหมด</a>
+            </ul>
+          </li>
+        </ul> 
+        <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+                <i class="bx bxs-grid-alt"></i>
+            </span>
+            <span class="navlink">อื่นๆ</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+        </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">กระต่าย</a>
+            <a href="#" class="nav_link sublink">ปลา และ สัตว์น้ำ</a>
+          </ul>
+        </div> 
+        <ul class="menu_items">
+          <div class="menu_title menu_AboutUS"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class='bx bx-buildings' ></i>
+              </span>
+              <span class="navlink">ที่ตั้งสาขา</span>
+            </a>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-flag"></i>
+              </span>
+              <span class="navlink">Notice board</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-medal"></i>
+              </span>
+              <span class="navlink">รางวัล</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">การตั้งค่า</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">เปลี่ยนภาษา</span>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script src="Js/Shipping.js"></script>
+  </body>
+</html>
