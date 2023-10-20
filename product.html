@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Css/product.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo_item">
+          <i class="bx bx-menu" id="sidebarOpen"></i>
+          <img src="Img/logo2.png" alt=""></i>FURRY PET FRIENDS
+        </div>
+  
+        <div class="search_bar">
+          <input type="text" id="search-input" placeholder="Search" />
+        </div>
+  
+        <div class="navbar_content">
+          <i class="bi bi-grid"></i>
+          <i class='bx bxs-moon' id="darkLight"></i>
+          <i class='bx bx-cart-add' ></i>
+          <i class='bx bxs-chat' id="chatIcon"></i>
+          <i class="bx bxs-bell-ring"></i> 
+          <i class="bx bxs-heart"></i>
+          <img src="Img/logo3.png" alt="" class="profile" />
+        </div>
+      </nav>
+  
+      <nav class="sidebar">
+        <div class="menu_content">
+          <ul class="menu_items">
+            <div class="menu_title menu_PETS"></div>
+            <li class="item">
+              <div href="#" class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bxs-dog"></i>
+                </span>
+                <span class="navlink">สุนัข</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+  
+              <ul class="menu_items submenu">
+                <a href="#" class="nav_link sublink">อาหาร</a>
+                <a href="#" class="nav_link sublink">ของเล่น</a>
+                <a href="#" class="nav_link sublink">อุปกรณ์</a>
+                <a href="#" class="nav_link sublink">ดูทั้งหมด</a>
+              </ul>
+            </li>
+            <li class="item">
+              <div href="#" class="nav_link submenu_item">
+                <span class="navlink_icon">
+                  <i class="bx bxs-cat"></i>
+                </span>
+                <span class="navlink">แมว</span>
+                <i class="bx bx-chevron-right arrow-left"></i>
+              </div>
+  
+              <ul class="menu_items submenu">
+                <a href="#" class="nav_link sublink">อาหาร</a>
+                <a href="#" class="nav_link sublink">ของเล่น</a>
+                <a href="#" class="nav_link sublink">อุปกรณ์</a>
+                <a href="#" class="nav_link sublink">ดูทั้งหมด</a>
+              </ul>
+            </li>
+          </ul> 
+          <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                  <i class="bx bxs-grid-alt"></i>
+              </span>
+              <span class="navlink">อื่นๆ</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+          </div>
+  
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">กระต่าย</a>
+              <a href="#" class="nav_link sublink">ปลา และ สัตว์น้ำ</a>
+            </ul>
+          </div> 
+          <ul class="menu_items">
+            <div class="menu_title menu_AboutUS"></div>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class='bx bx-buildings' ></i>
+                </span>
+                <span class="navlink">ที่ตั้งสาขา</span>
+              </a>
+          </ul>
+          <ul class="menu_items">
+            <div class="menu_title menu_setting"></div>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-flag"></i>
+                </span>
+                <span class="navlink">Notice board</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-medal"></i>
+                </span>
+                <span class="navlink">รางวัล</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-cog"></i>
+                </span>
+                <span class="navlink">การตั้งค่า</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="nav_link">
+                <span class="navlink_icon">
+                  <i class="bx bx-layer"></i>
+                </span>
+                <span class="navlink">เปลี่ยนภาษา</span>
+              </a>
+            </li>
+          </ul>
+          <div class="bottom_content">
+            <div class="bottom expand_sidebar">
+              <span> Expand</span>
+              <i class='bx bx-log-in' ></i>
+            </div>
+            <div class="bottom collapse_sidebar">
+              <span> Collapse</span>
+              <i class='bx bx-log-out'></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="background">
+        <div class="background-1"></div>
+        <div class="left-img"><div id="productImg"></div></div>
+        <div class="mid">
+            <div id="productName"></div>
+            <p>options</p>
+            <div id="productSize"></div>
+            <div id="productPrice"></div>
+            <div id="boxAmountProduct">
+                <button onclick="decreaseAmount()">-</button>
+                <p id="amountProduct">1</p>
+                <button onclick="increaseAmount()">+</button>
+            </div>
+            <div id="buttonAddBuy">
+                <div id="addProduct" onclick="add()">เพิ่มในรถเข็น</div>
+                <div id="buyProduct" onclick="buy()">ซื้อ</div>
+            </div>
+        </div>
+        <div class="right">
+            <p>มีประกัน</p>
+            <p>คืนเงินได้</p>
+        </div>
+        <div class="right-1">
+            <p style="font-weight: 700;">สินค้าเพิ่มเติม</p>
+        </div>
+        <div class="mid-new">
+            <p style="font-weight: 700;">รายละเอียดสินค้า</p>
+            <div id="productDiscription"></div>
+            <div id="productImg"></div>
+        </div>
+        <div class="mid-new-1">
+            <p style="font-weight: 700;">รีวิว</p>
+        </div>
+    </div>
+    <script src="Js/product.js"></script>
+</body>
+</html>

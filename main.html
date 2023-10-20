@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>FURRY PET FRIENDS</title>
+    <link rel="stylesheet" href="Css/Main.css" />
+  </head>
+  <body onload="displayProductsList('/products/Food');">
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="Img/logo2.png" alt=""></i>FURRY PET FRIENDS
+      </div>
+
+      <div class="search_bar">
+        <input type="text" id="search-input" placeholder="Search" />
+      </div>
+
+      <div class="navbar_content">
+        <i class="bi bi-grid"></i>
+        <i class='bx bxs-moon' id="darkLight"></i>
+        <i class='bx bx-cart-add' id="cart-add"></i>
+        <i class='bx bxs-chat' id="chatIcon"></i>
+        <i class="bx bxs-bell-ring"></i> 
+        <i class="bx bxs-heart"></i>
+        <img src="Img/logo3.png" alt="" class="profile" />
+      </div>
+    </nav>
+
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_PETS"></div>
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bxs-dog"></i>
+              </span>
+              <span class="navlink">สุนัข</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">อาหาร</a>
+              <a href="#" class="nav_link sublink">ของเล่น</a>
+              <a href="#" class="nav_link sublink">อุปกรณ์</a>
+              <a href="#" class="nav_link sublink">ดูทั้งหมด</a>
+            </ul>
+          </li>
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bxs-cat"></i>
+              </span>
+              <span class="navlink">แมว</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">อาหาร</a>
+              <a href="#" class="nav_link sublink">ของเล่น</a>
+              <a href="#" class="nav_link sublink">อุปกรณ์</a>
+              <a href="#" class="nav_link sublink">ดูทั้งหมด</a>
+            </ul>
+          </li>
+        </ul> 
+        <div href="#" class="nav_link submenu_item">
+            <span class="navlink_icon">
+                <i class="bx bxs-grid-alt"></i>
+            </span>
+            <span class="navlink">อื่นๆ</span>
+            <i class="bx bx-chevron-right arrow-left"></i>
+        </div>
+
+          <ul class="menu_items submenu">
+            <a href="#" class="nav_link sublink">กระต่าย</a>
+            <a href="#" class="nav_link sublink">ปลา และ สัตว์น้ำ</a>
+          </ul>
+        </div> 
+        <ul class="menu_items">
+          <div class="menu_title menu_AboutUS"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class='bx bx-buildings' ></i>
+              </span>
+              <span class="navlink">ที่ตั้งสาขา</span>
+            </a>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_setting"></div>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-flag"></i>
+              </span>
+              <span class="navlink">Notice board</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-medal"></i>
+              </span>
+              <span class="navlink">รางวัล</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-cog"></i>
+              </span>
+              <span class="navlink">การตั้งค่า</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="nav_link">
+              <span class="navlink_icon">
+                <i class="bx bx-layer"></i>
+              </span>
+              <span class="navlink">เปลี่ยนภาษา</span>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <span> Expand</span>
+            <i class='bx bx-log-in' ></i>
+          </div>
+          <div class="bottom collapse_sidebar">
+            <span> Collapse</span>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="sec">
+      <top class="top-order-group">
+          <div class="top-order-back"></div>
+          <div class="text-top-order">TopOrder</div>
+          <div class="jpg-top-order"><img id="image0" class="top-otderimg"></div>
+          <div class="name-top-order"><p id="name0"></p></div>
+          <div class="price-top-order"><p id="price0"></p></div>
+          <div id="enter-order"></div>
+      </top>
+      <in class="body-group">
+          <div class="list">
+              <div class="text-head-list">หมวดหมู่</div>
+              <div class="botton-list">
+                  <div class="botton-food" onclick="fetchDataFood()" id="Gfood">อาหาร</div>
+                  <div class="botton-foodplus" onclick="fetchDataFoodplus()" id="Gfoodplus">อาหารเสริม</div>
+                  <div class="botton-tool" onclick="fetchDatafoodtablets()" id="Gfoodtablets">อาหารเม็ด</div>
+                  <div class="botton-tool" onclick="fetchDatafoodwet()" id="Gfoodwet">อาหารเปียก</div>
+                  <div class="botton-tool" onclick="fetchDatatoy()" id="Gtoy">ของเล่น</div>
+                  <div class="botton-tool" onclick="fetchDatatool()" id="Gtool">อุปกรณ์</div>
+              </div>
+          </div>
+          <div class="col-md-9">
+              <div class="order">
+                  <div class="text-head-order">สินค้า</div>
+                  <div id="products_list"></div>
+              </div>
+          </div>
+      </in>
+    </section>
+    <script src="Js/Main.js"></script>
+  </body>
+</html>
